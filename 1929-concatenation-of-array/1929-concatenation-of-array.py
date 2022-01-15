@@ -1,4 +1,8 @@
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
-        newarray = nums + nums
-        return newarray
+        a = []
+        for i in nums:
+            a.append(i)
+        for i in nums:
+            a.append(i)
+        return a
