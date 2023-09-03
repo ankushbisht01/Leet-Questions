@@ -4,19 +4,22 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        s = s.lower()
-        result = ""
-        for i in range(len(s)):
-            digit = ord(s[i])
-            if (digit>96 and digit<123) or  (digit >= 48 and digit<=57 ):
-                result+=s[i]
-        
-        i = 0 
-        j = len(result)-1
+        i = 0
+        j = len(s)-1
         while(i < j ):
-            if result[i] != result[j]:
-                return False 
-            i+=1
-            j-=1
+            a = s[i].lower()
+            b = s[j].lower()
+            if not((97<=ord(a)<=122) or (48<=ord(a)<=57)):
+                i+=1
+                continue
+            if not((97<=ord(b)<=122) or (48<=ord(b)<=57)):
+                j-=1
+                continue
+            if (a == b):
+                i+=1
+                j-=1
+                continue
+            return False
         return True
+                
         
