@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/ankushbisht01/Leet-Questions/tree/master/0048-rotate-image) |
 | [0056-merge-intervals](https://github.com/ankushbisht01/Leet-Questions/tree/master/0056-merge-intervals) |
+| [0287-find-the-duplicate-number](https://github.com/ankushbisht01/Leet-Questions/tree/master/0287-find-the-duplicate-number) |
 ## Math
 |  |
 | ------- |
@@ -32,4 +33,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/ankushbisht01/Leet-Questions/tree/master/0056-merge-intervals) |
+## Two Pointers
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/ankushbisht01/Leet-Questions/tree/master/0287-find-the-duplicate-number) |
+## Binary Search
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/ankushbisht01/Leet-Questions/tree/master/0287-find-the-duplicate-number) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/ankushbisht01/Leet-Questions/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
