@@ -48,8 +48,8 @@ mem = nn.Parameter(torch.FloatTensor(1, mem_dim, mem_size))
 
 **Mathematical formulation**:
 ```
-logits = (M^T × Y) / √k
-Y_new = M × softmax(logits)
+logits = (M^T @ Y) / √k    # @ denotes matrix multiplication
+Y_new = M @ softmax(logits)
 ```
 where M is the memory bank, Y is the feature map, and k is the feature dimension.
 
@@ -113,9 +113,9 @@ For img1 and img2:
 ├─► 5. Classification Branch
 │     ├─ Input: deep features x3
 │     ├─ Predict: c = Sigmoid(cls_head(x3))
-│     ├─ Binarize: c_binary = (c >= 0.5) ? 1 : 0
+│     ├─ Binarize: c_binary = 1 if c >= 0.5 else 0
 │     ├─ Compute error: c_err = |c_binary1 - c_binary2|
-│     └─ Combine: c_final = clip(c_gt + c_err, 0, 1)
+│     └─ Combine: c_final = torch.clamp(c_gt + c_err, 0, 1)
 │
 ├─► 6. Density Map Generation
 │     ├─ Generate maps: d = den_head(y_new)
